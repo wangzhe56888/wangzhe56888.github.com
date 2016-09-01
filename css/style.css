@@ -344,7 +344,10 @@ h6{
     padding-left:30px;
     font-weight:500;
     font-size:12px;
-    letter-spacing:0.8px
+    letter-spacing:0.8px;
+	position:absolute;
+	left:0px;
+	bottom:0px;
 }
 .sidebar-logo{
     margin-top:35px;
