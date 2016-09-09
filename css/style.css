@@ -408,11 +408,12 @@ h6{
 }
 .sidebar-copyright{
     font-size:12px;
-    padding-left:30px;
     line-height:24px;
     margin-bottom:0px;
     padding-bottom:32px;
     opacity:0.5;
+	width: 100%;
+	text-align:center;
 }
 /*Sidebar Form*/
 .sidebar-form{
