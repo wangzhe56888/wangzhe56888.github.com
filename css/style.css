@@ -342,7 +342,7 @@ h6{
 }
 .sidebar-header p{
     color:#c8c7c7;
-    padding-left:30px;
+    
     font-weight:500;
     font-size:12px;
     letter-spacing:0.8px;
@@ -350,6 +350,8 @@ h6{
 	left:0px;
 	bottom: 0px;
 	margin: 0px;
+	width:100%;
+	text-align:center;
 }
 .sidebar-logo{
     margin-top:35px;
