@@ -334,6 +334,7 @@ h6{
     background-size:270px 112px;
     width:270px;
     height:112px;
+	position:relative;
 }
 .sidebar-navigation li:hover{
     background-color: #eeeeee;
@@ -347,7 +348,8 @@ h6{
     letter-spacing:0.8px;
 	position:absolute;
 	left:0px;
-	bottom:0px;
+	bottom: 0px;
+	margin: 0px;
 }
 .sidebar-logo{
     margin-top:35px;
