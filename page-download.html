@@ -1,0 +1,171 @@
+<!DOCTYPE HTML><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0 minimal-ui"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+<title>简历下载</title>
+<link href="css/framework.css" 		 rel="stylesheet" type="text/css">
+<link href="css/style.css"     		 rel="stylesheet" type="text/css">
+<link href="css/owl.theme.css" 		 rel="stylesheet" type="text/css">
+<link href="css/swipebox.css"		 rel="stylesheet" type="text/css">
+<link href="css/font-awesome.css"	 rel="stylesheet" type="text/css">
+<link href="css/animate.css"			 rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jqueryui.js"></script>
+</head>
+<body> 
+<div id="preloader">
+	<div id="status">
+    	<p class="center-text">
+			我正狂奔向你...
+            <em>你若等待，清风自来！</em>
+        </p>
+    </div>
+</div>
+<div class="all-elements">
+    <div class="snap-drawers">
+        <!-- 左侧菜单栏 -->
+        <div class="snap-drawer snap-drawer-left">
+            <div class="sidebar-header">
+                <p>平凡的脚步也可以走完伟大的行程</p>
+            </div>
+            
+            <!-- 菜单 -->
+            <ul class="sidebar-navigation full-bottom" style="margin-bottom:0px;">
+                <li>
+                    <a href="index.html"><i class="fa fa-home"></i><em>个人概述</em></a>
+                </li>
+                <li>
+                    <a href="project.html"><i class="fa fa-tasks"></i><em>项目展示</em></a>
+                </li>
+                <li>
+                    <a href="page-profile.html"><i class="fa fa-user"></i><em>个人信息</em></a>
+                </li>
+                <li>
+                    <a href="page-login.html"><i class="fa fa-envelope"></i><em>留言</em></a>
+                </li>
+                <li>
+                    <a href="gallery.html"><i class="fa fa-picture-o"></i><em>私密艳照</em></a>
+                </li>
+                <li class="selected">
+                    <a href="page-download.html"><i class="fa fa-download"></i><em>下载简历</em></a>
+                </li>
+                <div class="decoration" style="margin-bottom:0px;"></div>
+           
+                <li>
+                    <a href="page-error.html"><i class="fa fa-rocket"></i><em>身怀绝技</em></a>
+                </li>
+                
+                <li>
+                    <a href="page-error.html"><i class="fa fa-briefcase"></i><em>工作经历</em></a>
+                </li>
+                
+                 <li>
+                    <a href="page-error.html"><i class="fa fa-trophy"></i><em>获得奖项</em></a>
+                </li>
+                
+                <div class="decoration" style="margin-bottom:0px;"></div>
+                <li>
+                    <a class="sidebar-close" href="#"><i class="fa fa-times"></i><em>关闭</em></a>
+                </li>
+            </ul>
+            <div class="decoration"></div>
+            <p class="sidebar-copyright">Copyright 2016 andy<br>All rights reserved.</p>
+        </div>
+       <!-- 右侧滑动菜单栏 -->
+        <div class="snap-drawer snap-drawer-right">
+            <div class="sidebar-header">
+                <p>取舍间必有得失，不用太计较</p> 
+            </div>
+                      
+            <div class="sidebar-form">
+                <div class="contact-form no-bottom"> 
+                    <div class="formSuccessMessageWrap" id="formSuccessMessageWrap">
+                        <div class="big-notification green-notification">
+                            <h3 class="uppercase">信息提交成功</h3>
+                            <a href="#" class="close-big-notification">x</a>
+                            <p>感谢您的留言，我会尽快回复您，谢谢！</p>
+                        </div>
+                    </div>
+                    <form action="php/contact.php" method="post" class="contactForm" id="contactForm">
+                        <fieldset>
+                            <div class="formValidationError" id="contactNameFieldError">
+                                <div class="static-notification-red tap-dismiss-notification">
+                                    <p class="center-text uppercase">大神怎么称呼啊？</p>
+                                </div>
+                            </div>             
+                            <div class="formValidationError" id="contactEmailFieldError">
+                                <div class="static-notification-red tap-dismiss-notification">
+                                    <p class="center-text uppercase">茫茫人海，没有邮箱我如何寻觅？</p>
+                                </div>
+                            </div> 
+                            <div class="formValidationError" id="contactEmailFieldError2">
+                                <div class="static-notification-red tap-dismiss-notification">
+                                    <p class="center-text uppercase">请问你填个错误邮箱是几个意思？</p>
+                                </div>
+                            </div> 
+                            <div class="formValidationError" id="contactMessageTextareaError">
+                                <div class="static-notification-red tap-dismiss-notification">
+                                    <p class="center-text uppercase">亲，你到底想跟我说什么？</p>
+                                </div>
+                            </div>   
+                            <div class="formFieldWrap">
+                                <input type="text" name="contactNameField" value="Name" onFocus="if (this.value=='Name') this.value = ''" onBlur="if (this.value=='') this.value = 'Name'" class="contactField requiredField" id="contactNameField"/>
+                            </div>
+                            <div class="formFieldWrap">
+                                <input type="text" name="contactEmailField" value="Email" onFocus="if (this.value=='Email') this.value = ''" onBlur="if (this.value=='') this.value = 'Email'" class="contactField requiredField requiredEmailField" id="contactEmailField"/>
+                            </div>
+                            <div class="formTextareaWrap">
+                                <textarea onFocus="if (this.value=='Message') this.value = ''" onBlur="if (this.value=='') this.value = 'Message'" name="contactMessageTextarea" class="contactTextarea requiredField" id="contactMessageTextarea">Message</textarea>
+                            </div>
+                            <div class="formSubmitButtonErrorsWrap">
+                                <input type="submit" class="buttonWrap button button-green contactSubmitButton" id="contactSubmitButton" value="SUBMIT" data-formId="contactForm"/>
+                            </div>
+                        </fieldset>
+                    </form>       
+                </div>
+            </div>
+            
+            <div class="decoration" style="margin-bottom:0px;"></div>
+            <ul class="sidebar-navigation">
+                <li>
+                    <a class="sidebar-close" href="#"><i class="fa fa-times"></i><em>关闭</em></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <!-- Page Content-->
+    <div id="content" class="snap-content">
+        <div class="header material-box">
+            <a href="#" class="header-nav-left open-left"><i class="fa fa-navicon"></i></a>
+            简历下载
+            <a href="#" class="header-nav-right open-right"><i class="fa fa-envelope-o"></i></a>
+        </div>
+        
+        <div class="container material-box">
+            <div class="one-half" align="center">
+                <h4>Word简历</h4>
+                <a href="andy_word.docx"><img width="64px" height="64px" src="ke01_img/word_logo.png"/> </a>
+            </div>
+            <div class="two-half" align="center">
+                <h4>PDF简历</h4>
+               <a href="andy_pdf.pdf"> <img width="64px" height="64px" src="ke01_img/pdf_logo.jpg"/></a>
+            </div>
+        </div>
+        
+    </div>  
+    
+        
+    <div class="footer-menu">
+        <a href="#" class="show-left-sidebar open-left"></a>
+        <a href="#" class="show-right-sidebar open-right"><i class="fa fa-envelope-o"></i></a>
+    </div>
+    
+</div>
+
+
+<script type="text/javascript" src="js/framework.plugins.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+</body>

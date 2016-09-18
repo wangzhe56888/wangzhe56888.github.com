@@ -408,7 +408,7 @@ $(document).ready(function() {
 		hideBarsDelay : 3000 // 0 to always show caption and action bar
 	});
 	
-	var time = 7; // time in seconds
+	var time = 5; // time in seconds
 	
 	var $progressBar,
 		$bar, 
